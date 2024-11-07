@@ -1,101 +1,258 @@
+
 import Image from "next/image";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="flex min-h-screen flex-col bg-black">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Home */}
+
+      <div className="container mx-auto px-12 py-4">
+        <Navbar />
+        <Hero />
+      </div>
+
+      {/* About */}
+
+      <div id="about" className="py-20 text-white">
+        <div className="container mx-auto px-4 md:px-0">
+          <div className="flex flex-wrap justify-between">
+            <div className="w-full md:w-1/3 mb-8 md:ml-0">
+              <Image src="/profile-img.jpeg" alt="My-Pic" width={300} height={500} className="w-[90%] rounded-lg" />
+            </div>
+
+            <div className="w-full md:w-2/3">
+              <h2 className="text-4xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-blue-400 to-pink-600">About me</h2>
+
+              <p className="text-lg mb-8 leading-relaxed">
+                Hi, I am Ubaid, proficient in web development with skills in HTML, CSS, JavaScript, and TypeScript,
+                learned through Giaic training. I am now expanding my expertise with Next.js and React.js. As a
+                newcomer to the field, I am excited to apply my knowledge, learn from others, and take on new
+                challenges. I am sharing my journey, projects, and experiments in this portfolio, and I am looking
+                forward to connecting with others and growing together in the web development community.
+              </p>
+
+              <div className="flex flex-col">
+                <p className="text-lg font-medium mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-700 inline-block">Skills</p>
+
+                <ul>
+                  <li className="mb-4">
+                    <span className="text-indigo-400 font-semibold">Web Development</span>
+                    <br /> Frontend Website Development
+                  </li>
+                  <li className="mb-4">
+                    <span className="text-indigo-400 font-semibold">Web Designing</span>
+                    <br /> Frontend Website Designing
+                  </li>
+                  <li className="mb-4">
+                    <span className="text-indigo-400 font-semibold">Technologies</span>
+                    <br /> Proficient in HTML, CSS, and JavaScript/TypeScript
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+      {/* Service */}
+
+      <div id="services" className="py-8">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-semibold text-center mb-8 text-white">My Services</h2>
+
+          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 mt-6">
+
+            <div className="bg-gray-800 p-8 rounded-xl transition transform hover:bg-gradient-to-r hover:from-purple-500 hover:via-blue-500 hover:to-green-500 hover:-translate-y-2">
+              <Image
+                src="/web-dev.png"
+                alt="Web Development"
+                width={80}
+                height={75}
+                className="mx-auto mb-4 rounded-lg"
+              />
+              <h2 className="text-2xl font-medium mb-4 text-center text-white">Web Development</h2>
+              <p className="text-base text-gray-200 mb-4">
+                Crafting responsive and interactive web experiences with expertise in HTML, CSS, JavaScript, and TypeScript. Building dynamic solutions with Next.js and React.js, delivering high-quality web development services with attention to detail.
+              </p>
+              <a href="#" className="text-cyan-400 text-sm">Learn more</a>
+            </div>
+
+            <div className="bg-gray-800 p-8 rounded-xl transition transform hover:bg-gradient-to-r hover:from-purple-500 hover:via-blue-500 hover:to-green-500 hover:-translate-y-2">
+              <Image
+                src="/frontent-dev.jfif"
+                alt="Frontend Development"
+                width={100}
+                height={75}
+                className="mx-auto mb-4 rounded-lg"
+              />
+              <h2 className="text-2xl font-medium mb-4 text-center text-white">Frontend Development</h2>
+              <p className="text-base text-gray-200 mb-4">
+                Building fast, responsive, and interactive frontend experiences with expertise in JavaScript, TypeScript, and frameworks like Next.js and React.js.
+              </p>
+              <a href="#" className="text-cyan-400 text-sm">Learn more</a>
+            </div>
+
+            <div className="bg-gray-800 p-8 rounded-xl transition transform hover:bg-gradient-to-r hover:from-purple-500 hover:via-blue-500 hover:to-green-500 hover:-translate-y-2">
+              <Image
+                src="/web-des.png"
+                alt="Web Design"
+                width={80}
+                height={80}
+                className="mx-auto mb-4 rounded-lg"
+              />
+              <h2 className="text-2xl font-medium mb-4 text-center text-white">Web Design</h2>
+              <p className="text-base text-gray-200 mb-4">
+                Creating visually stunning and user-friendly web designs that captivate audiences. Bringing ideas to life with custom HTML, CSS, and JavaScript solutions, tailored to elevate your online presence.
+              </p>
+              <a href="#" className="text-cyan-400 text-sm">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Work */}
+
+      <div id="work" className="py-12">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-semibold text-center mb-8 text-white">My Work</h2>
+
+          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 mt-6">
+
+            <div className="relative overflow-hidden rounded-lg transform transition duration-500 hover:scale-105">
+              <Image
+                src="/Capture.PNG"
+                alt="1st Project"
+                width={300}
+                height={300}
+                className="w-full h-auto transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-blue-500 to-transparent opacity-0 hover:opacity-100 flex flex-col items-center justify-center text-center text-white p-6 transition-opacity duration-500">
+                <h3 className="text-2xl font-medium mb-4 text-black">HTML-CSS Projects</h3>
+                <p className="text-sm">This is my HTML-CSS Projects. Which I made when I was learning HTML and CSS.</p>
+                <a href="https://html-journey.netlify.app/" target="_blank" className="mt-4 w-10 h-10 flex items-center justify-center bg-white text-blue-500 rounded-full">
+                  &#8599;
+                </a>
+              </div>
+            </div>
+
+            <div className="relative overflow-hidden rounded-lg transform transition duration-500 hover:scale-105">
+              <Image
+                src="/calculator.jpg"
+                alt="2nd Project"
+                width={300}
+                height={300}
+                className="w-full h-auto transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-blue-500 to-transparent opacity-0 hover:opacity-100 flex flex-col items-center justify-center text-center text-white p-6 transition-opacity duration-500">
+                <h3 className="text-2xl font-medium mb-4 text-black">Digital Calculator</h3>
+                <p className="text-sm">This is the Simple Calculator. Made By using HTML, CSS, and JavaScript.</p>
+                <a href="https://ubaidcalculator.netlify.app/" target="_blank" className="mt-4 w-10 h-10 flex items-center justify-center bg-white text-blue-500 rounded-full">
+                  &#8599;
+                </a>
+              </div>
+            </div>
+
+            <div className="relative overflow-hidden rounded-lg transform transition duration-500 hover:scale-105">
+              <Image
+                src="/clock.jpg"
+                alt="3rd Project"
+                width={300}
+                height={300}
+                className="w-full h-auto transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-blue-500 to-transparent opacity-0 hover:opacity-100 flex flex-col items-center justify-center text-center text-white p-6 transition-opacity duration-500">
+                <h3 className="text-2xl font-medium mb-4 text-black">Digital Clock</h3>
+                <p className="text-sm">This is the Digital Clock. Made By using HTML, CSS, and JavaScript.</p>
+                <a href="https://ubaidclock.netlify.app/" target="_blank" className="mt-4 w-10 h-10 flex items-center justify-center bg-white text-blue-500 rounded-full">
+                  &#8599;
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center items-center">
+            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 hover:bg-slate-200 text-white mt-4"><a href="#">See more</a></button>
+          </div>
+        </div>
+      </div>
+
+     {/* Contact */}
+
+      <div id="contact" className="py-20 bg-black text-white">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-between">
+
+            <div className="contact-left w-full md:w-1/3 mb-12 md:mb-0">
+              <h1 className="text-4xl font-semibold mb-6">Contact Me</h1>
+              <a href="mailto:ubaidkamal62@gmail.com" target="_blank" className="text-blue-400 text-xl flex items-center mb-4">
+                <i className="fa-solid fa-envelope mr-3 text-white"></i>
+                ubaidkamal62@gmail.com
+              </a>
+              <a href="tel:+923410258688" target="_blank" className="text-blue-400 text-xl flex items-center mb-4">
+                <i className="fa-solid fa-phone mr-3 text-white"></i>
+                03410258688
+              </a>
+              <div className="social-icons flex mt-6">
+                <a href="https://www.facebook.com" target="_blank" className="text-blue-600 mr-4 text-3xl">
+                  <i className="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" className="text-pink-600 mr-4 text-3xl">
+                  <i className="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://github.com/Sheikh-Ubaid-Raza" target="_blank" className="text-gray-400 mr-4 text-3xl">
+                  <i className="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ubaid-raza-8764332b9/?trk=contact-info" target="_blank" className="text-blue-700 text-3xl">
+                  <i className="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+              <a href="/cv.pdf">
+                <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 hover:bg-slate-200 text-white mt-5">
+                  Download CV
+                </button>
+              </a>
+            </div>
+
+
+            <div className="contact-right w-full md:w-2/3">
+              <form className="bg-gray-800 p-6 rounded-lg shadow-md">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                  className="w-full p-3 mb-4 bg-gray-700 text-white rounded focus:outline-none"
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="Your Email"
+                  required
+                  className="w-full p-3 mb-4 bg-gray-700 text-white rounded focus:outline-none"
+                />
+                <textarea
+                  name="Message"
+                  rows={5}
+                  placeholder="Your Message"
+                  className="w-full p-3 mb-4 bg-gray-700 text-white rounded focus:outline-none"
+                />
+                <button type="submit" className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 hover:bg-slate-200 text-white">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        {/* Copyright Section */}
+
+        <div className="copyright bg-gray-900 text-center py-6 mt-8">
+          <p className="text-gray-400 text-sm"> © Ubaid. Made with{' '}<span className="text-red-500"><i className="fa-solid fa-heart"></i></span>{' '}using HTML, CSS, and JavaScript.
+          </p>
+        </div>
+      </div>
+
     </div>
-  );
-}
+  )
+};
