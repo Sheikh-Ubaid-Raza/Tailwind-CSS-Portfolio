@@ -188,26 +188,16 @@ export default function Home() {
             <div className="contact-left w-full md:w-1/3 mb-12 md:mb-0">
               <h1 className="text-4xl font-semibold mb-6">Contact Me</h1>
               <a href="mailto:ubaidkamal62@gmail.com" target="_blank" className="text-blue-400 text-xl flex items-center mb-4">
-                <i className="fa-solid fa-envelope mr-3 text-white"></i>
                 ubaidkamal62@gmail.com
               </a>
               <a href="tel:+923410258688" target="_blank" className="text-blue-400 text-xl flex items-center mb-4">
-                <i className="fa-solid fa-phone mr-3 text-white"></i>
                 03410258688
               </a>
               <div className="social-icons flex mt-6">
-                <a href="https://www.facebook.com" target="_blank" className="text-blue-600 mr-4 text-3xl">
-                  <i className="fa-brands fa-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank" className="text-pink-600 mr-4 text-3xl">
-                  <i className="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://github.com/Sheikh-Ubaid-Raza" target="_blank" className="text-gray-400 mr-4 text-3xl">
-                  <i className="fa-brands fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/ubaid-raza-8764332b9/?trk=contact-info" target="_blank" className="text-blue-700 text-3xl">
-                  <i className="fa-brands fa-linkedin"></i>
-                </a>
+                <a href="https://github.com/Sheikh-Ubaid-Raza" target="_blank" className="text-white mr-4 text-xl">
+                Github</a>
+                <a href="https://www.linkedin.com/in/ubaid-raza-8764332b9/?trk=contact-info" target="_blank" className="text-white text-xl">
+                Linkedin</a>
               </div>
               <a href="/cv.pdf">
                 <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 hover:bg-slate-200 text-white mt-5">
@@ -248,7 +238,7 @@ export default function Home() {
         {/* Copyright Section */}
 
         <div className="copyright bg-gray-900 text-center py-6 mt-8">
-          <p className="text-gray-400 text-sm"> © Ubaid. Made with{' '}<span className="text-red-500"><i className="fa-solid fa-heart"></i></span>{' '}using HTML, CSS, and JavaScript.
+          <p className="text-gray-400 text-sm"> © Ubaid. Made with{' '}<span className="text-red-500"></span>{' '}using HTML, CSS, and JavaScript.
           </p>
         </div>
       </div>
