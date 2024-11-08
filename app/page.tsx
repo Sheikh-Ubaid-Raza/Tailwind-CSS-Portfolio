@@ -194,9 +194,9 @@ export default function Home() {
                 03410258688
               </a>
               <div className="social-icons flex mt-6">
-                <a href="https://github.com/Sheikh-Ubaid-Raza" target="_blank" className="text-white mr-4 text-xl">
+                <a href="https://github.com/Sheikh-Ubaid-Raza" target="_blank" className="text-white mr-4 text-xl px-2 py-2 bg-blue-600 rounded-lg hover:bg-blue-700">
                 Github</a>
-                <a href="https://www.linkedin.com/in/ubaid-raza-8764332b9/?trk=contact-info" target="_blank" className="text-white text-xl">
+                <a href="https://www.linkedin.com/in/ubaid-raza-8764332b9/?trk=contact-info" target="_blank" className="text-white text-xl px-2 py-2 bg-blue-600 rounded-lg hover:bg-blue-700">
                 Linkedin</a>
               </div>
               <a href="/cv.pdf">
