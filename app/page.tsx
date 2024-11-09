@@ -71,7 +71,7 @@ export default function Home() {
                 src="/web-dev.png"
                 alt="Web Development"
                 width={80}
-                height={75}
+                height={80}
                 className="mx-auto mb-4 rounded-lg"
               />
               <h2 className="text-2xl font-medium mb-4 text-center text-white">Web Development</h2>
@@ -83,10 +83,10 @@ export default function Home() {
 
             <div className="bg-gray-800 p-8 rounded-xl transition transform hover:bg-gradient-to-r hover:from-purple-500 hover:via-blue-500 hover:to-green-500 hover:-translate-y-2">
               <Image
-                src="/frontent-dev.jfif"
+                src="/images.png"
                 alt="Frontend Development"
-                width={100}
-                height={75}
+                width={80}
+                height={80}
                 className="mx-auto mb-4 rounded-lg"
               />
               <h2 className="text-2xl font-medium mb-4 text-center text-white">Frontend Development</h2>
@@ -199,7 +199,7 @@ export default function Home() {
                 <a href="https://www.linkedin.com/in/ubaid-raza-8764332b9/?trk=contact-info" target="_blank" className="text-white text-xl px-2 py-2 bg-blue-600 rounded-lg hover:bg-blue-700">
                 Linkedin</a>
               </div>
-              <a href="/cv.pdf">
+              <a href="/cv.pdf" target="_blank">
                 <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 hover:bg-slate-200 text-white mt-5">
                   Download CV
                 </button>
